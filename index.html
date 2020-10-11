@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Eclipse </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>    
+    <body>
+        <div id="space">
+        </div>
+        <div class="container">
+            <div class="wrapper">
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            createStars();
+        });
+        function createStars() {
+            for(i = 0; i < 200; i++){
+                var diameter = Math.floor(Math.random() * 5) + 3;
+                var top = Math.floor(Math.random() * 100) + 1;
+                var left = Math.floor(Math.random() * 100) + 1;
+                var doc = "<span class='star' style='top:"+top+"%;left:"+left+"%;height:" + diameter + "px;width:" + diameter +"px;box-shadow: 0 0 " + diameter*2 + "px white;'></span>";
+                $("#space").append(doc);
+            }
+        }
+    </script>
+</html>
