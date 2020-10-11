@@ -37,7 +37,6 @@ body {
     left: 50%; 
     border-radius: 50%;
     display: inline-block;
-    /* transform-origin: 50% 50%; */
     transform: translateX(-50%);
 }
 .wrapper::before {
@@ -51,7 +50,7 @@ body {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 2px white; 
+    box-shadow: 0 0 2px gold; 
     overflow: visible;
     animation: corona 10s linear infinite; 
 }
@@ -110,31 +109,31 @@ body {
 }
  @keyframes corona {
     0% {
-        box-shadow: 0 0 5px white;
+        box-shadow: 0 0 5px gold;
     }
     10% {
-        box-shadow: 0 0 5px white;
+        box-shadow: 0 0 5px gold;
     }
     30% {
-        box-shadow: 0 0 5px white;
+        box-shadow: 0 0 5px gold;
     }
     38% {
-        box-shadow: 0 0 160px white;
+        box-shadow: 0 0 160px gold;
     }
     42% {
-        box-shadow: 0 0 160px white;
+        box-shadow: 0 0 160px gold;
     }    
     50% {
-        box-shadow: 0 0 5px white;
+        box-shadow: 0 0 5px gold;
     }
     70% {
-        box-shadow: 0 0 5px white;
+        box-shadow: 0 0 5px gold;
     }
     80% {
-        box-shadow: 0 0 5px white;
+        box-shadow: 0 0 5px gold;
     }
     100% {
-        box-shadow: 0 0 5px white;
+        box-shadow: 0 0 5px gold;
     }
 } 
 @keyframes darken {
